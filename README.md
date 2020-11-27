@@ -1,2 +1,2 @@
 # MinecraftData
-Minecraft Reports Hosted By GitHub
+Minecraft Reports for Luna Server
