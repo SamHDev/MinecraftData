@@ -7,7 +7,7 @@ import json
 data = {}
 data["_"] = { "version": { "id": int(target), "name": "1.15.2"}, "includes": ["recipes", "advancements", "tags", "loot_tables", "blocks", "commands"] }
 
-data["recipes"] = { "type": "multiple", "base": "/data/minecraft/recipes/", "files": [], "dirs": []  }
+data["recipes"] = { "type": "multiple", "base": "/data/minecraft/recipes/", "files": [], "dirs": [] }
 for file in os.listdir(f"versions/{target}/data/minecraft/recipes/"):
     data["recipes"]["files"].append(file)
 
@@ -32,6 +32,7 @@ for folder, subs, files in os.walk(f"versions/{target}/data/minecraft/loot_table
 
 data["blocks"] = { "type": "single", "file": "/reports/blocks.json"}
 data["commands"] = { "type": "single", "file": "/reports/commands.json"}
+data["registries"] = { "type": "single", "file": "/reports/registries.json"}
 
 
 with open(join("versions", target, "index.json"), "w") as f:
