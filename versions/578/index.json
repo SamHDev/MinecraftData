@@ -5,7 +5,7 @@
             "name": "1.15.2"
         },
         "includes": [
-            "recipies",
+            "recipes",
             "advancements",
             "tags",
             "loot_tables",
@@ -13,7 +13,7 @@
             "commands"
         ]
     },
-    "recipies": {
+    "recipes": {
         "type": "multiple",
         "base": "/data/minecraft/recipes/",
         "files": [
